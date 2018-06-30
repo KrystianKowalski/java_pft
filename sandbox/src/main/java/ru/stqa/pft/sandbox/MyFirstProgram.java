@@ -13,7 +13,9 @@ public class MyFirstProgram {
       Rectangle r = new Rectangle(4, 6);
       System.out.println("Rectangle sqaure area of " + r.a + " & " + r.b + " = " + r.area());
 
-      Point p = new Point(2, 3, 7, 9);
+      double[] p1 = {2, 3};
+      double[] p2 = {7, 9};
+      Point p = new Point(p1, p2);
       System.out.println(p.distance());
    }
 

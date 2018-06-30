@@ -5,11 +5,11 @@ public class Point {
    private double[] p2 = new double[2];
 
 
-   public Point(double x, double y, double a, double b) {
-      p1[0] = x;
-      p1[1] = y;
-      p2[0] = a;
-      p2[1] = b;
+   public Point(double p1[], double p2[]) {
+      this.p1[0] = p1[0];
+      this.p1[1] = p1[1];
+      this.p2[0] = p2[0];
+      this.p2[1] = p2[1];
    }
 
    public double distance() {
