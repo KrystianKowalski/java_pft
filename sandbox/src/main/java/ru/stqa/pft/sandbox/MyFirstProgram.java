@@ -7,20 +7,16 @@ public class MyFirstProgram {
       hello("user");
       hello("Krystian");
 
-      double l = 5;
-      System.out.println("Square sqaure area of " + l + " = " + area (l));
+      Square s = new Square(5);
+      System.out.println("Square sqaure area of " + s.l + " = " + s.area ());
 
-      double a =4;
-      double b=6;
-      System.out.println("Rectangle sqaure area of " + a +  " & " + b + " = " + area (a, b));
+      Rectangle r = new Rectangle(4,6);
+      System.out.println("Rectangle sqaure area of " + r.a +  " & " + r.b + " = " + r.area ());
    }
+
    public static void hello (String somebody ) {
       System.out.println("Hello, " + somebody + "!");
    }
-   public static double area (double len){
-      return len*len;
-   }
-   public static double area (double a, double b) {
-      return a*b;
-   }
+
+
 }
