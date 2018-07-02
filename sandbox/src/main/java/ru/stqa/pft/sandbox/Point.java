@@ -1,8 +1,8 @@
 package ru.stqa.pft.sandbox;
 
 public class Point {
-   private double[] p1 = new double[2];
-   private double[] p2 = new double[2];
+   public double[] p1 = new double[2];
+   public double[] p2 = new double[2];
 
 
    public Point(double p1[], double p2[]) {
