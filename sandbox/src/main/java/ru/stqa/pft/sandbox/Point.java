@@ -1,24 +1,30 @@
 package ru.stqa.pft.sandbox;
 
 public class Point {
-   public double[] p1 = new double[2];
-   public double[] p2 = new double[2];
+   // class body
+   public double x;
+   public double y;
 
-
-   public Point(double p1[], double p2[]) {
-      this.p1[0] = p1[0];
-      this.p1[1] = p1[1];
-      this.p2[0] = p2[0];
-      this.p2[1] = p2[1];
+   // constructor
+   public Point(double x, double y) {
+      this.x = x;
+      this.y = y;
    }
 
-   public double distance() {
-      double dx;
-      double dy;
-      dx = p2[0] - p1[0];
-      dy = p2[1] - p1[1];
+   public double getX() {
+      return x;
+   }
 
-      return Math.sqrt((dx * dx) + (dy * dy));
+   public double getY() {
+      return y;
+   }
+
+   //method calculating distace between two points
+   public double distance(Point p1) {
+      double dx = this.x - p1.getX();
+      double dy = this.y - p1.getY();
+
+      return Math.sqrt((dx * dx)+ (dy * dy));
    }
 
 }

@@ -13,10 +13,10 @@ public class MyFirstProgram {
       Rectangle r = new Rectangle(4, 6);
       System.out.println("Rectangle sqaure area of " + r.a + " & " + r.b + " = " + r.area());
 
-      double[] p1 = {2, 3};
-      double[] p2 = {7, 9};
-      Point p = new Point(p1, p2);
-      System.out.println(p.distance());
+
+      Point point1 = new Point(2, 3);
+      Point point2 = new Point(7, 9);
+      System.out.println(point1.distance(point2));
    }
 
    public static void hello(String somebody) {
