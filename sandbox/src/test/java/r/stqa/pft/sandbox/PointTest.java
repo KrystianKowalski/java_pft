@@ -10,8 +10,9 @@ public class PointTest {
 
    public void testDistance() {
       //given
-      Point p1 = new Point(4,2);
-      Point p2 = new Point(6,9);
+      Point p1 = new Point(4, 2);
+      Point p2 = new Point(6, 9);
+      
 
       //when
       double distanceResult = p1.distance(p2);
